@@ -73,7 +73,10 @@
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 {
     // do nothing
+<<<<<<< HEAD
     NSLog(@"%@",NSStringFromSelector(_cmd));
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 }
 
 - (void)layoutViewsForColumnAtIndex:(NSUInteger)index inRect:(CGRect)rect;

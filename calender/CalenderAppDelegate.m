@@ -11,6 +11,7 @@
 
 @implementation CalenderAppDelegate
 
+<<<<<<< HEAD
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -25,6 +26,18 @@
         // Load resources for iOS 7 or later
     }
     self.window.backgroundColor = [UIColor whiteColor];
+=======
+@synthesize managedObjectContext = __managedObjectContext;
+@synthesize managedObjectModel = __managedObjectModel;
+@synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.viewController.manegedObjectContext = self.managedObjectContext;
+    [_window addSubview:self.tabBarController.view];
+    [_window makeKeyAndVisible];
+    // Override point for customization after application launch.
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
     return YES;
 }
 							
@@ -55,4 +68,92 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+<<<<<<< HEAD
+=======
+
+//core Date program
+
+// NSManagedObjectContextのインスタンスを作成するメソッド
+- (NSManagedObjectContext *)loadManagedObjectContext {
+    
+    if (__managedObjectContext != nil)
+        return __managedObjectContext;
+    
+    //シリアライズの情報を取得する
+    NSPersistentStoreCoordinator *aCoodinator = [self persistentStoreCoordinator];
+    if (aCoodinator != nil) {
+        //オブジェクトコンテキストの作成
+        __managedObjectContext = [[NSManagedObjectContext alloc] init];
+        //シリアライズの情報に設定する
+        [__managedObjectContext setPersistentStoreCoordinator:aCoodinator];
+    }
+    return __managedObjectContext;
+}
+
+// NSPersistentStoreCoordinatorインスタンスを作成するメソッド。
+// NSManagedObjectContextを作成する際に必要となる。
+// データ永続化の具体的な方法を実装しているが、
+// 今回は、sqliteを用いたデータ永続化を行う。
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    
+    if (__persistentStoreCoordinator != nil) {
+        return __persistentStoreCoordinator;
+    }
+    
+    //シリアライズ先のURLを作成する
+    //ドキュメントディレクトリ内の「Event.sqlite」をファイルのURLに
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent: @"Event.sqlite"];
+    //シリアライズの情報の作成
+    NSError *error = nil;
+    __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    //SQliteを使って、変数「storeURL」が指すURLにシリアライズするように設定。
+    if (![__persistentStoreCoordinator
+          addPersistentStoreWithType:NSSQLiteStoreType
+          configuration:nil
+          URL:storeURL
+          options:nil
+          error:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
+    
+    return __persistentStoreCoordinator;
+}
+
+// NSManagedObjectModelのインスタンスを生成するクラス。
+// 作成したモデル定義ファイルを読み込む。
+- (NSManagedObjectModel *)managedObjectModel {
+    
+    if (__managedObjectModel != nil) {
+        return __managedObjectModel;
+    }
+    //モデルファイルのパスを所得して、URLを作成する
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Event" withExtension:@"momd"];
+    //モデルファイルを読み込む
+    __managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    
+    return __managedObjectModel;
+}
+
+- (NSURL *)applicationDocumentsDirectory {
+    
+    return [[[NSFileManager defaultManager]URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]lastObject];
+    
+}
+
+- (void)saveContext
+{
+    NSError *error = nil;
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    if (managedObjectContext != nil) {
+        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+            abort();
+        }
+    }
+}
+
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 @end

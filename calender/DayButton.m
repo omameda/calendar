@@ -18,9 +18,12 @@
 	self.frame = buttonFrame;
 	self.titleLabel.textAlignment = UITextAlignmentRight;
 	self.backgroundColor = [UIColor clearColor];
+<<<<<<< HEAD
     //ボタンの枠線
     [[self layer]setBorderColor:[[UIColor grayColor ] CGColor]];
     [[self layer]setBorderWidth:1.0];
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 	[self setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
 	
 	[self addTarget:delegate action:@selector(dayButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
@@ -28,8 +31,11 @@
 	return self;
 }
 
+<<<<<<< HEAD
 //日付の位置指定
 //変更12/10
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	
@@ -38,6 +44,7 @@
 	int framePadding = 4;
 	labelFrame.origin.x = self.bounds.size.width - labelFrame.size.width - framePadding;
 	labelFrame.origin.y = framePadding;
+<<<<<<< HEAD
     [self.titleLabel setTag:123];
 	
 	[self titleLabel].frame = labelFrame;
@@ -64,6 +71,10 @@
 }
 
 - (void)eventSubviews{
+=======
+	
+	[self titleLabel].frame = labelFrame;
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 }
 
 - (void)dealloc {

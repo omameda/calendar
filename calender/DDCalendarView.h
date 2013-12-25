@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "DayButton.h"
+<<<<<<< HEAD
 #define KNUM_CELL_HEIGHT 6.0f
 #define KDAY_LABEL_HEIGHT_RATE 26.0f
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 
 @protocol DDCalendarViewDelegate <NSObject>
 - (void)dayButtonPressed:(DayButton *)button;
@@ -28,7 +31,10 @@
 	NSCalendar *calendar;
 	float calendarWidth;
 	float calendarHeight;
+<<<<<<< HEAD
     float dayLabelHeight;
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 	float cellWidth;
 	float cellHeight;
 	int currentMonth;

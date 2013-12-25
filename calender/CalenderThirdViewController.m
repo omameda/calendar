@@ -7,7 +7,10 @@
 //
 
 #import "CalenderThirdViewController.h"
+<<<<<<< HEAD
 #import "DCDate.h"
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 
 @interface CalenderThirdViewController ()
 
@@ -30,6 +33,7 @@
 	// Do any additional setup after loading the view.
     //_manegedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
     //NSLog(@"After managedObjectContext: %@",  __managedObjectContext);
+<<<<<<< HEAD
    // SEOPickerView *pickerView = [[SEOPickerView alloc]init];
     //[self.view addSubview:pickerView.view];
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
@@ -47,6 +51,8 @@
     UIDatePicker *datePicker = (UIDatePicker *)sender;
     NSString *str=[NSString stringWithFormat:@"%d",[DCDate pickerDay]];
     [self.botton setTitle:str forState:UIControlStateNormal];
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 }
 
 - (void)didReceiveMemoryWarning
@@ -58,6 +64,7 @@
 
 
 - (IBAction)bottonPush:(id)sender {
+<<<<<<< HEAD
     UIView *view;
     for (view in [self.view subviews]) {
         if (view.tag == 123) {
@@ -72,4 +79,7 @@
     }
 }
 
+=======
+}
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 @end

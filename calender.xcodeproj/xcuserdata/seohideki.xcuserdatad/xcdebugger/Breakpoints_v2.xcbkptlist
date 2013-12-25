@@ -6,6 +6,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+<<<<<<< HEAD
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -556,6 +557,18 @@
             startingLineNumber = "43"
             endingLineNumber = "43"
             landmarkName = "-startTimeSet"
+=======
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "calender/CalenderAppDelegate.m"
+            timestampString = "408273770.773517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
+            landmarkName = "-applicationDocumentsDirectory"
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -565,6 +578,7 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
+<<<<<<< HEAD
             filePath = "calender/SEOSetTable.m"
             timestampString = "409638445.6216"
             startingColumnNumber = "9223372036854775807"
@@ -588,6 +602,15 @@
             startingLineNumber = "122"
             endingLineNumber = "122"
             landmarkName = "-changeCellValue:"
+=======
+            filePath = "calender/CalenderAppDelegate.m"
+            timestampString = "408273770.773517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "-persistentStoreCoordinator"
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

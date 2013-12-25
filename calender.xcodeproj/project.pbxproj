@@ -37,6 +37,7 @@
 		F6A89295184C753400920B31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A89274184C753400920B31 /* UIKit.framework */; };
 		F6A8929D184C753400920B31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6A8929B184C753400920B31 /* InfoPlist.strings */; };
 		F6A8929F184C753400920B31 /* calenderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8929E184C753400920B31 /* calenderTests.m */; };
+<<<<<<< HEAD
 		F6E3C45F18603DDB00D16B6B /* CalendarEvent.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6E3C45D18603DDB00D16B6B /* CalendarEvent.xcdatamodeld */; };
 		F6E3C4FB18611F1B00D16B6B /* SEOAddEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3C4F918611F1B00D16B6B /* SEOAddEventViewController.m */; };
 		F6E3C502186135E700D16B6B /* DCCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3C4FF186135E700D16B6B /* DCCoreData.m */; };
@@ -45,6 +46,8 @@
 		F6E3C51018614D3300D16B6B /* DCDate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3C50F18614D3300D16B6B /* DCDate.m */; };
 		F6E3C5131861621200D16B6B /* SEOAddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3C5121861621200D16B6B /* SEOAddEventView.m */; };
 		F6E3C5171861708E00D16B6B /* SEOSetTable.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E3C5161861708E00D16B6B /* SEOSetTable.m */; };
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +106,7 @@
 		F6A8929A184C753400920B31 /* calenderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "calenderTests-Info.plist"; sourceTree = "<group>"; };
 		F6A8929C184C753400920B31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6A8929E184C753400920B31 /* calenderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calenderTests.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		F6E3C45E18603DDB00D16B6B /* CalendarEvent.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CalendarEvent.xcdatamodel; sourceTree = "<group>"; };
 		F6E3C4F818611F1B00D16B6B /* SEOAddEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEOAddEventViewController.h; sourceTree = "<group>"; };
 		F6E3C4F918611F1B00D16B6B /* SEOAddEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEOAddEventViewController.m; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		F6E3C5121861621200D16B6B /* SEOAddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEOAddEventView.m; sourceTree = "<group>"; };
 		F6E3C5151861708E00D16B6B /* SEOSetTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEOSetTable.h; sourceTree = "<group>"; };
 		F6E3C5161861708E00D16B6B /* SEOSetTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEOSetTable.m; sourceTree = "<group>"; };
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,17 +202,29 @@
 		F6A89276184C753400920B31 /* calender */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				F6E3C45D18603DDB00D16B6B /* CalendarEvent.xcdatamodeld */,
+=======
+				F6259FB2184CCCD500252D3F /* TimesSquare */,
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				F6A8927F184C753400920B31 /* CalenderAppDelegate.h */,
 				F6A89280184C753400920B31 /* CalenderAppDelegate.m */,
 				F6A89282184C753400920B31 /* Main.storyboard */,
 				F6259FC2184DBE4300252D3F /* Event.xcdatamodeld */,
+<<<<<<< HEAD
+=======
+				F6259FA3184C7A0500252D3F /* DayButton.h */,
+				F6259FA4184C7A0500252D3F /* DayButton.m */,
+				F6259FA0184C79E000252D3F /* DDCalendarView.h */,
+				F6259FA1184C79E000252D3F /* DDCalendarView.m */,
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				F6A89285184C753400920B31 /* CalenderFirstViewController.h */,
 				F6A89286184C753400920B31 /* CalenderFirstViewController.m */,
 				F6A89288184C753400920B31 /* CalenderSecondViewController.h */,
 				F6A89289184C753400920B31 /* CalenderSecondViewController.m */,
 				F6259FC7184DC0FB00252D3F /* CalenderThirdViewController.h */,
 				F6259FC8184DC0FB00252D3F /* CalenderThirdViewController.m */,
+<<<<<<< HEAD
 				F6E3C4F818611F1B00D16B6B /* SEOAddEventViewController.h */,
 				F6E3C4F918611F1B00D16B6B /* SEOAddEventViewController.m */,
 				F6E3C50D18613EC400D16B6B /* SEOClass */,
@@ -214,6 +232,8 @@
 				F6E3C505186136D000D16B6B /* MonthCalendar */,
 				F6259FB2184CCCD500252D3F /* TimesSquare */,
 				F6E3C504186136BA00D16B6B /* coreData */,
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				F6A8928B184C753400920B31 /* Images.xcassets */,
 				F6A89277184C753400920B31 /* Supporting Files */,
 			);
@@ -255,6 +275,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		F6E3C504186136BA00D16B6B /* coreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +320,8 @@
 			name = SEOClass;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -347,9 +370,12 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "seo hideki";
 				TargetAttributes = {
+<<<<<<< HEAD
 					F6A8926C184C753400920B31 = {
 						DevelopmentTeam = 4WDQWSLMXJ;
 					};
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 					F6A89290184C753400920B31 = {
 						TestTargetID = F6A8926C184C753400920B31;
 					};
@@ -406,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				F6E3C51018614D3300D16B6B /* DCDate.m in Sources */,
 				F6259FC9184DC0FB00252D3F /* CalenderThirdViewController.m in Sources */,
 				F6E3C5081861398E00D16B6B /* ExchangeToData.m in Sources */,
@@ -425,6 +452,19 @@
 				F6259FA2184C79E000252D3F /* DDCalendarView.m in Sources */,
 				F6259FC4184DBE4300252D3F /* Event.xcdatamodeld in Sources */,
 				F6E3C45F18603DDB00D16B6B /* CalendarEvent.xcdatamodeld in Sources */,
+=======
+				F6259FC9184DC0FB00252D3F /* CalenderThirdViewController.m in Sources */,
+				F6259FBE184CCCD500252D3F /* TSQCalendarMonthHeaderCell.m in Sources */,
+				F6259FA5184C7A0500252D3F /* DayButton.m in Sources */,
+				F6A89287184C753400920B31 /* CalenderFirstViewController.m in Sources */,
+				F6259FC0184CCCD500252D3F /* TSQCalendarView.m in Sources */,
+				F6A89281184C753400920B31 /* CalenderAppDelegate.m in Sources */,
+				F6A8928A184C753400920B31 /* CalenderSecondViewController.m in Sources */,
+				F6A8927D184C753400920B31 /* main.m in Sources */,
+				F6259FBF184CCCD500252D3F /* TSQCalendarRowCell.m in Sources */,
+				F6259FA2184C79E000252D3F /* DDCalendarView.m in Sources */,
+				F6259FC4184DBE4300252D3F /* Event.xcdatamodeld in Sources */,
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				F6259FBD184CCCD500252D3F /* TSQCalendarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,13 +592,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+				CODE_SIGN_IDENTITY = "iPhone Developer: hideki seo (YC4S9L4SMY)";
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "calender/calender-Prefix.pch";
 				INFOPLIST_FILE = "calender/calender-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
+=======
+				PROVISIONING_PROFILE = "64A43F4A-44C6-4CA0-AD63-A5CDD5CE2E1D";
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -568,13 +616,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+=======
+				CODE_SIGN_IDENTITY = "iPhone Developer: hideki seo (YC4S9L4SMY)";
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "calender/calender-Prefix.pch";
 				INFOPLIST_FILE = "calender/calender-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				PROVISIONING_PROFILE = "";
+=======
+				PROVISIONING_PROFILE = "64A43F4A-44C6-4CA0-AD63-A5CDD5CE2E1D";
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -664,6 +720,7 @@
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
+<<<<<<< HEAD
 		F6E3C45D18603DDB00D16B6B /* CalendarEvent.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
@@ -674,6 +731,8 @@
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 /* End XCVersionGroup section */
 	};
 	rootObject = F6A89265184C753400920B31 /* Project object */;

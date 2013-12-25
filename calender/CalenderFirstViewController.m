@@ -7,8 +7,11 @@
 //
 
 #import "CalenderFirstViewController.h"
+<<<<<<< HEAD
 #import "SEOAddEventViewController.h"
 #import "SEOAddEventView.h"
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 
 @interface CalenderFirstViewController ()
 
@@ -19,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+<<<<<<< HEAD
     //iOS7以降であれば、ステータスバーをのぞいたフレームを取得
     if ([[[[UIDevice currentDevice] systemVersion]
           componentsSeparatedByString:@"."][0] intValue] >= 7) //iOS7 later
@@ -40,6 +44,10 @@
     float viewWidth = self.view.bounds.size.width;
     CGPoint origin = self.view.frame.origin;
     calenderView = [[DDCalendarView alloc]initWithFrame:CGRectMake(origin.x, origin.y, viewWidth, viewHeight) fontName:@"HelveticaNeue" delegate:self];
+=======
+	// Do any additional setup after loading the view, typically from a nib.
+    calenderView = [[DDCalendarView alloc]initWithFrame:self.view.bounds fontName:@"AmericanTypewriter" delegate:self];
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
     [self.view addSubview:calenderView];
 }
 
@@ -53,6 +61,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+<<<<<<< HEAD
 - (IBAction)editBottonPush:(id)sender {
 //    SEOAddEventViewController *viewController = [[SEOAddEventViewController alloc]initWithNibName:nil bundle:nil];
 //    viewController.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
@@ -66,4 +75,6 @@
 
     
 }
+=======
+>>>>>>> fcd9f4f2f6fde59114d779d1c5bbd311e2d3e1dd
 @end
